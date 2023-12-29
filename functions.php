@@ -123,17 +123,21 @@ add_action( 'widgets_init', 'beautytemple_widgets_init' );
 function beautytemple_scripts() {
 	wp_enqueue_style( 'beautytemple-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'beautytemple-main-style', get_stylesheet_directory_uri() . '/css/main.css', array(), array(), 'all' );
+	// wp_enqueue_style( 'beautytemple-main-style', get_stylesheet_directory_uri() . '/css/main.css', array(), array(), 'all' );
 
-	wp_enqueue_style( 'beautytemple-main-style', get_stylesheet_directory_uri() . '/css/normalize.css', array(), array(), 'all' );
+	// wp_enqueue_style( 'beautytemple-main-style', get_stylesheet_directory_uri() . '/css/normalize.css', array(), array(), 'all' );
 
-	wp_enqueue_style( 'montserrat', esc_url('//fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i'), array(), array(), 'all' );
+	wp_enqueue_style( 'beautytemple-tailwindcss-style', get_stylesheet_directory_uri() . '/css/tailwind.css', array(), array(), 'all' );
 
-	wp_enqueue_style( 'playfair-display', esc_url('//fonts.googleapis.com/css?family=Playfair+Display'), array(), array(), 'all' );
+	wp_enqueue_style( 'source-sans-pro', esc_url('//use.typekit.net/aor1ozm.css'), array(), array(), 'all' );
 
-	wp_enqueue_style( 'fontawesome', esc_url('//use.fontawesome.com/releases/v5.1.0/css/all.css'), array(), array(), 'all' );
+	// wp_enqueue_style( 'montserrat', esc_url('//fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i'), array(), array(), 'all' );
 
-	wp_enqueue_script( 'modernizrn', get_template_directory_uri() . '/js/vendor/modernizr-3.6.0.min.js', array(), array(), true );
+	// wp_enqueue_style( 'playfair-display', esc_url('//fonts.googleapis.com/css?family=Playfair+Display'), array(), array(), 'all' );
+
+	// wp_enqueue_style( 'fontawesome', esc_url('//use.fontawesome.com/releases/v5.1.0/css/all.css'), array(), array(), 'all' );
+
+	// wp_enqueue_script( 'modernizrn', get_template_directory_uri() . '/js/vendor/modernizr-3.6.0.min.js', array(), array(), true );
 
 	wp_enqueue_script( 'beautytemple-plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), array(), true );
 
