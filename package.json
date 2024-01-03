@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "scripts": {
+    "tailwindcss:compile": "npx tailwindcss -i ./tailwind.source.css -o ./tailwind.dist.css",
+    "tailwindcss:watch": "npx tailwindcss -i ./tailwind.source.css -o ./tailwind.dist.css --watch",
+    "bundle": "dir-archiver --src . --dest ../beautytemple.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
+  },
+  "dependencies": {
+    "dir-archiver": "^2.1.0"
+  }
+}

@@ -19,7 +19,7 @@
 
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('font-sans'); ?>>
 <?php wp_body_open(); ?>
 <header class="site-header" style="background-image: url('<?php header_image(); ?>');" >
     <div class="container">

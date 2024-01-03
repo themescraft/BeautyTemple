@@ -2,7 +2,7 @@
 * Global styles
 */
 body {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 100%;
     line-height: 1.875em;
     margin: 0;
@@ -12,7 +12,7 @@ img {
    max-width: 100%;
 }
 p {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 1rem;
     line-height: 1.875em;
     margin-top: 3.625em;
@@ -73,7 +73,7 @@ input[type='submit']:hover {
 
 textarea {
     /* Name: */
-    font-family: 'Montserrat', 'sans-serif';
+    /* font-family: 'Montserrat', 'sans-serif'; */
     font-size: 11px;
     color: #777777;
     letter-spacing: 1.5px;
@@ -220,7 +220,7 @@ nav.social-nav {
     text-align: center;
     letter-spacing: 1.5px;
     color: #777777;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 .site-branding {
@@ -228,7 +228,7 @@ nav.social-nav {
 }
 
 .logo a, .logo {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 2.25rem;
     color: #7c326b;
     text-decoration: none;
@@ -249,7 +249,7 @@ nav.social-nav {
     margin-bottom: 0.5rem;
 }
 .description p, .description {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     margin: 0;
     font-size: 0.6875rem;
     letter-spacing: 1.5px;
@@ -412,7 +412,7 @@ nav.main-nav {
     font-size: 0.8125rem;
     letter-spacing: 2px;
     line-height: 1.23em;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     text-decoration: none;
     color: #202020;
     text-transform: uppercase;
@@ -499,7 +499,7 @@ article.post-preview.last-post::after {
     font-size: 0.6875rem;
     line-height: 1.27em;
     letter-spacing: 1.5px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     text-decoration: none;
     color: #777777;
     border: none;
@@ -527,7 +527,7 @@ article.post-preview h1 {
     margin-top: 0.6em;
     text-align: center;
     border: none;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     position: relative;
 }
 
@@ -548,7 +548,7 @@ article.post-preview h1 a {
     margin-top: 0.6em;
     text-align: center;
     border: none;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
 
 }
 
@@ -558,7 +558,7 @@ article.post-preview h1 a:hover {
 }
 
 article.post-preview p {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 1rem;
     line-height: 1.875em;
     text-align: center;
@@ -693,7 +693,7 @@ aside.sidebar {
 
 .widget ul li a,
 .widget ul li {
-    font-family: 'Playfair Display', 'serif';
+    /* font-family: 'Playfair Display', 'serif'; */
     font-size: 1.125rem;
     color: #777777;
     line-height: 1.33em;
@@ -730,7 +730,7 @@ aside.sidebar {
     outline: none;
     width: 100%;
     background: #F6F6F6;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 0.6875rem;
     border: none;
 }
@@ -756,7 +756,7 @@ img.about-widget__img {
     text-align: center;
     color: #777777;
     font-size: 1.125em;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
     margin-top: 1.22em;
     margin-bottom: 1.22em;
@@ -780,7 +780,7 @@ img.about-widget__img {
 .widget h2.widgettitle{
     color: #777777;
     font-size: 1.125em;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
     margin-top: 1.22em;
     margin-bottom: 1.22em;
@@ -809,7 +809,7 @@ img.about-widget__img {
     text-transform: none;
     line-height: 1.76em;
     color: #777777;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-weight: 400;
     padding: 0;
 }
@@ -883,7 +883,7 @@ footer.site-footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
 
 }
 
@@ -907,7 +907,7 @@ section.newsletter {
 }
 
 .newsletter h2 {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 1.0625rem;
     color: #202020;
     letter-spacing: 2.5px;
@@ -919,7 +919,7 @@ section.newsletter {
 }
 
 .newsletter p {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 1.06rem;
     color: #777777;
     text-align: center;
@@ -937,7 +937,7 @@ section.newsletter {
 }
 
 .newsletter input[type='text'] {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 0.6875rem;
     color: #777777;
     letter-spacing: 1.5px;
@@ -953,7 +953,7 @@ section.newsletter {
 }
 
 .newsletter input[type='submit'] {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 0.6875rem;
     color: #ffffff;
     letter-spacing: 1.5px;
@@ -980,7 +980,7 @@ section.newsletter {
 .footer-nav-menu,
 .footer-nav-menu p,
 .footer-nav-menu a {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     color: #777777;
 }
 
@@ -1066,7 +1066,7 @@ section.page-heading {
 }
 
 span.page-meta {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 0.6875rem;
     line-height: 0.875em;
     text-transform: uppercase;
@@ -1074,7 +1074,7 @@ span.page-meta {
 }
 
 .page-heading h1 {
-    font-family: 'Playfair Display', sans-serif;
+    /* font-family: 'Playfair Display', sans-serif; */
     font-size: 2.5rem;
     line-height: 1.4em;
     color: #202020;
@@ -1105,7 +1105,7 @@ article.post-single h1 {
     margin-top: 0.6em;
     text-align: center;
     border: none;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
 }
 
 article.post-single h1 a {
@@ -1116,7 +1116,7 @@ article.post-single h1 a {
     margin-top: 0.6em;
     text-align: center;
     border: none;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
 
 }
 
@@ -1126,7 +1126,7 @@ article.post-single h1 a:hover {
 }
 
 article.post-single p {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 1rem;
     line-height: 1.875em;
     text-align: justify;
@@ -1214,7 +1214,7 @@ section.comment-area {
 .comment-body h5 span a
 
 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 1.125rem;
     line-height: 1.25em;
     margin: 0 0 0.83em 0;
@@ -1228,7 +1228,7 @@ section.comment-area {
 }
 
 span.comment-meta {
-    font-family: 'Montserrat', 'sans-serif';
+    /* font-family: 'Montserrat', 'sans-serif'; */
     font-size: 0.625rem;
     font-weight: 400;
     color: #202020;
@@ -1236,7 +1236,7 @@ span.comment-meta {
 }
 
 .comment-body p{
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 0.9375rem;
     color: #777777;
     line-height: 24px;
@@ -1284,7 +1284,7 @@ form.comment-form {
 }
 
 .comment-form input[type='submit'] {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 0.6875rem;
     color: #202020;
     letter-spacing: 1.5px;
