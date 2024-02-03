@@ -14,10 +14,10 @@ if ( ! function_exists( 'beautytemple_posted_on' ) ) {
 	function beautytemple_posted_on() {
 
 
-		$time_string = '<span class="post-meta post-date published">'. esc_html__('Published: ','beautytemple').'%2$s</span>';
+		$time_string = '<span class="post-meta post-date published text-[#BDBDBD] text-[14px]">'. esc_html__('Published: ','beautytemple').'%2$s</span>';
 
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<span class="post-meta post-date published">'. esc_html__('Published: ','beautytemple').'%2$s</span><span class="post-meta post-date updated">'. esc_html__('Updated: ','beautytemple').'%4$s</span>';
+			$time_string = '<div class="flex gap-4"><span class="post-meta post-date published text-[#BDBDBD] text-[14px]">'. esc_html__('Published: ','beautytemple').'%2$s</span><span class="post-meta post-date updated text-[#BDBDBD] text-[14px]">'. esc_html__('Updated: ','beautytemple').'%4$s</span></div>';
 		}
 
 		$time_string = sprintf( $time_string,
@@ -91,3 +91,34 @@ if ( ! function_exists( 'beautytemple_post_thumbnail' ) ){
 		echo $output;
 	}
 }
+
+
+if ( ! function_exists( 'beautytemple_posted_by' ) ) :
+	/**
+	 * Prints HTML with meta information for the current author.
+	 */
+	function beautytemple_posted_by() {
+		$byline = sprintf(
+			/* translators: %s: post author. */
+			esc_html_x( 'by %s', 'post author', 'beautytemple' ),
+			'<span class="author vcard"><a class="border-0 text-[#BDBDBD] capitalize text-[16px] url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		);
+
+		echo '<span class="byline text-[#BDBDBD]"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+	}
+endif;
+
+
+
+if ( ! function_exists( 'beautytemple_mins_to_read' ) ) :
+	/**
+	 * Prints HTML with meta information for the current author.
+	 */
+	function beautytemple_mins_to_read() {
+		$minsToRead = ceil(str_word_count(get_the_content()) / 200);
+
+		echo '<span class="text-[#BDBDBD] text-[16px]"> ' . $minsToRead . esc_html__(' min to read','beautytemple').'</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+	}
+endif;

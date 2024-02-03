@@ -510,10 +510,6 @@ article.post-preview.last-post::after {
     opacity: 0.7;
 }
 
-.post-meta + .post-meta {
-    margin-top: 1.5em;
-}
-
 article.post-preview .read-more,
 article.post-preview .more-link {
     margin-bottom: 6.23em;
