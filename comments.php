@@ -68,7 +68,7 @@ if ( post_password_required() ) {
                 endif;
 
             endif; // Check for have_comments().
-
+            $aria_req = 'required';
             $fields =  array(
 
 	            'author' =>
