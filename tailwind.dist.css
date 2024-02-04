@@ -620,8 +620,8 @@ video {
   display: none;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -813,4 +813,14 @@ video {
   font-weight: 400;
   line-height: 24px;
   /* 171.429% */
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }

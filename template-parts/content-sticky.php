@@ -4,18 +4,18 @@
 $sticky = get_option('sticky_posts');
 
 // check if there are any
-if (!empty($sticky)) {
+if (!empty($sticky)):
     // optional: sort the newest IDs first
     rsort($sticky);
 
     // override the query
-	$sticky_post = get_post($sticky[0]);        
-}
-?>
+	$sticky_post = get_post($sticky[0]);      
+    ?>  
+
 
 <div class="container mt-16">
-	<div class="flex gap-[24px]">
-		<div class="w-1/2">
+	<div class="flex flex-col lg:flex-row gap-[24px]">
+		<div class="w-full lg:w-1/2">
 			<div class="flex gap-4 align-middle mb-8">
 				<?php 
 				$categories = get_the_category();
@@ -40,10 +40,12 @@ if (!empty($sticky)) {
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2 rounded-[10px] overflow-hidden">
+		<div class="w-full lg:w-1/2 rounded-[10px] overflow-hidden">
 			<?php 
 				beautytemple_post_thumbnail(); 
 			?>
 		</div>
 	</div>
 </div>
+<?php endif; ?>
+
