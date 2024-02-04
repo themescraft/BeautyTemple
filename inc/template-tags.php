@@ -98,10 +98,11 @@ if ( ! function_exists( 'beautytemple_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function beautytemple_posted_by() {
+		global $post;
 		$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'beautytemple' ),
-			'<span class="author vcard"><a class="border-0 text-[#BDBDBD] capitalize text-[16px] url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+			'<span class="author vcard"><a class="border-0 text-[#BDBDBD] capitalize text-[16px] url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $post->post_author )) . '</a></span>'
 		);
 
 		echo '<span class="byline text-[#BDBDBD]"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

@@ -14,6 +14,10 @@
 
 get_header();
 ?>
+	<?php 
+		get_template_part( 'template-parts/content', 'sticky' );
+	?>
+
     <section class="main-wrapper">
         <div class="container main-wrapper__inner">
             <section class="blog-posts">
@@ -24,6 +28,9 @@ get_header();
 		            while ( have_posts() ) :
 			            the_post();
 
+						if(is_sticky()) {
+							continue;
+						}
 			            /*
 						 * Include the Post-Type-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
